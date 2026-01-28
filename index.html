@@ -2254,7 +2254,7 @@ Another_User"></textarea>
                             
                             <div class="form-group">
                                 <label for="int-responsible"><i class="fas fa-user-check"></i> Ответственный</label>
-                                <input type="text" id="int-responsible" class="form-input" placeholder="Введите ФИО ответственного...">
+                                <input type="text" id="int-responsible" class="form-input" placeholder="Введите ник ответственного...">
                             </div>
                         </div>
                         
@@ -2380,7 +2380,7 @@ Another_User"></textarea>
                                 </div>
                                 <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.2rem;">Таблица Следящих МЮ</h3>
                                 <p style="color: #aaa; margin-bottom: 20px; font-size: 0.9rem; line-height: 1.5;">
-                                    Таблица для отслеживания и мониторинга юридических процессов.
+                                    Таблица для крутых мужиков.
                                 </p>
                                 <a href="https://docs.google.com/spreadsheets/d/1pMe0laJVB1TkBZocnpFEeyuJv5RnVgKdhYbDl-PhDNQ/edit?gid=1308338873#gid=1308338873" 
                                    target="_blank" class="btn btn-primary" style="width: 100%;">
@@ -2495,7 +2495,7 @@ Another_User"></textarea>
             createDefaultUsers() {
                 const defaultUsers = {
                     "Scar_Cxrpse": {
-                        password: "Admin@2026!Scar",
+                        password: "",
                         role: "admin",
                         displayName: "Scar Cxrpse",
                         permissions: ["all"],
@@ -2503,7 +2503,7 @@ Another_User"></textarea>
                         createdAt: Date.now()
                     },
                     "Derek_Falcone": {
-                        password: "Falcone@Secure#2026",
+                        password: "",
                         role: "admin",
                         displayName: "Derek Falcone",
                         permissions: ["all"],
@@ -3268,7 +3268,7 @@ Another_User"></textarea>
             getStatusText(status) {
                 const statusMap = {
                     'pending': 'В процессе',
-                    'in-progress': 'Выполняется',
+                    'in-progress': 'На рассмотрении',
                     'completed': 'Выдано',
                     'cancelled': 'Отменено'
                 };
@@ -3291,7 +3291,7 @@ renderPunishmentsList() {
         
         if (punishment.status === 'in-progress') {
             statusClass = 'status-in-progress';
-            statusText = 'Выполняется';
+            statusText = 'На рассмотрении';
         } else if (punishment.status === 'completed') {
             statusClass = 'status-completed';
             statusText = 'Выдано';
